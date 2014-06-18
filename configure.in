@@ -20,7 +20,7 @@ dnl = checking for openssl =
 dnl ========================
 PKG_CHECK_MODULES([libssl], libssl, , 
 		  AC_CHECK_LIB(ssl, EVP_DigestInit_ex, [
-		       	libssl_LIBS="-lssl"
+			libssl_LIBS="-lssl -lcrypto"
 			libssl_CFLAGS="" ], AC_MSG_ERROR([libssl library is required])))
 AC_SUBST(libssl_CFLAGS)
 AC_SUBST(libssl_LIBS)
