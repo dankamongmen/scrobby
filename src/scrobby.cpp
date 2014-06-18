@@ -21,6 +21,7 @@
 #include <csignal>
 #include <cstdlib>
 #include <curl/curl.h>
+#include <unistd.h>
 #include <iostream>
 
 #include "callback.h"

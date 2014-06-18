@@ -24,6 +24,7 @@
 #include <fstream>
 #include <iostream>
 #include <openssl/evp.h>
+#include <unistd.h>
 #include <pwd.h>
 
 #include "configuration.h"
